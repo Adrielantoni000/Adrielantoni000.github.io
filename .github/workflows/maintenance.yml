@@ -1,0 +1,60 @@
+# Mantenimiento del portfolio
+# - En cada push / PR: valida HTML, JS, privacidad y enlaces.
+# - Cada lunes: revisa enlaces externos y abre un issue si algo se rompió.
+name: Maintenance
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+  schedule:
+    - cron: "0 13 * * 1" # lunes 9:00 AM hora de Puerto Rico (13:00 UTC)
+  workflow_dispatch: # botón "Run workflow" manual
+
+permissions:
+  contents: read
+  issues: write
+
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+
+      - name: Validate HTML
+        run: npx -y html-validate@9 index.html
+
+      - name: Check JavaScript syntax
+        run: node --check script.js
+
+      - name: Privacy & secrets scan
+        run: bash .github/scripts/privacy-scan.sh
+
+      - name: Check links
+        id: lychee
+        uses: lycheeverse/lychee-action@v2
+        with:
+          args: >-
+            --no-progress
+            --exclude-mail
+            --exclude "^https://fonts\.(googleapis|gstatic)\.com/?$"
+            --max-retries 3
+            index.html README.md
+          fail: ${{ github.event_name != 'schedule' }}
+
+      - name: Open issue if weekly link check failed
+        if: github.event_name == 'schedule' && steps.lychee.outputs.exit_code != '0'
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          gh issue create \
+            --title "🔗 Enlaces rotos detectados ($(date -u +%F))" \
+            --body-file ./lychee/out.md \
+            --label maintenance || \
+          gh issue create \
+            --title "🔗 Enlaces rotos detectados ($(date -u +%F))" \
+            --body-file ./lychee/out.md
