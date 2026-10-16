@@ -40,7 +40,6 @@ jobs:
         with:
           args: >-
             --no-progress
-            --exclude-mail
             --exclude "^https://fonts\.(googleapis|gstatic)\.com/?$"
             --max-retries 3
             index.html README.md
