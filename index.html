@@ -1,0 +1,203 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Adriel Silva — Developer</title>
+  <meta name="description" content="Adriel Antonio Silva Hernández — Software developer focused on Linux, local AI, automation, Python and C++. Bayamón, Puerto Rico.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <script>
+    try { const t = localStorage.getItem('theme'); if (t) document.documentElement.dataset.theme = t; } catch (e) {}
+  </script>
+</head>
+<body>
+  <a class="skip" href="#main">Skip to content</a>
+
+  <header class="nav">
+    <a class="brand" href="#top"><span class="prompt">~/</span>adriel</a>
+    <nav aria-label="Main">
+      <a href="#about">About</a>
+      <a href="#focus">Focus</a>
+      <a href="#skills">Skills</a>
+      <a href="#experience">Experience</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <button class="theme-toggle" type="button" aria-label="Toggle color theme">
+      <svg class="i-sun" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/></svg>
+      <svg class="i-moon" viewBox="0 0 24 24" aria-hidden="true"><path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z"/></svg>
+    </button>
+  </header>
+
+  <main id="main">
+    <!-- HERO -->
+    <section class="hero" id="top">
+      <div class="hero-text">
+        <p class="eyebrow"><span class="dot"></span> Available — full-time, remote, on-site or contract</p>
+        <h1>Adriel Antonio<br><span class="grad">Silva Hernández</span></h1>
+        <p class="lead">Software developer building <strong>local AI</strong>, <strong>automation</strong> and <strong>Linux</strong> tooling — from bash scripts to multi-agent pipelines.</p>
+        <div class="cta">
+          <a class="btn primary" href="#contact">Get in touch</a>
+          <a class="btn ghost" href="https://github.com/Adrielantoni000" target="_blank" rel="noopener">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M12 .5a11.5 11.5 0 0 0-3.64 22.41c.58.1.79-.25.79-.56v-2c-3.2.7-3.88-1.37-3.88-1.37-.52-1.33-1.28-1.69-1.28-1.69-1.05-.71.08-.7.08-.7 1.16.08 1.77 1.19 1.77 1.19 1.03 1.77 2.7 1.26 3.36.96.1-.75.4-1.26.73-1.55-2.56-.29-5.25-1.28-5.25-5.68 0-1.26.45-2.28 1.19-3.09-.12-.29-.52-1.46.11-3.04 0 0 .97-.31 3.17 1.18a11 11 0 0 1 5.77 0c2.2-1.49 3.17-1.18 3.17-1.18.63 1.58.23 2.75.11 3.04.74.81 1.19 1.83 1.19 3.09 0 4.41-2.7 5.38-5.26 5.67.41.36.78 1.06.78 2.14v3.17c0 .31.21.67.8.56A11.5 11.5 0 0 0 12 .5z"/></svg>
+            GitHub
+          </a>
+        </div>
+      </div>
+
+      <div class="terminal" aria-label="Terminal showing a profile summary">
+        <div class="term-bar"><span></span><span></span><span></span><em>adriel@fedora: ~</em></div>
+        <pre class="term-body"><code><span class="c-p">$</span> whoami
+adriel — developer · Bayamón, PR
+
+<span class="c-p">$</span> cat stack.txt
+python  c++  bash  sql  react
+linux   docker  git  systemd
+
+<span class="c-p">$</span> ollama list <span class="c-m"># local AI</span>
+qwen  llama.cpp  claude-code  rag
+
+<span class="c-p">$</span> <span class="typed" data-text="echo &quot;let's build something&quot;"></span><span class="caret">▍</span></code></pre>
+      </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section id="about" class="section">
+      <h2><span class="num">01</span> About</h2>
+      <div class="about">
+        <p>Motivated and adaptable developer with multidisciplinary experience in <strong>programming, automation, local AI</strong>, solar installation and industrial operations. I'm passionate about open-source technology, backend development and building efficient tools that solve real problems.</p>
+        <p>My background in the field — reading blueprints, meeting strict safety standards, keeping operations running — shapes how I write software: practical, reliable and well-documented. I'm committed to continuous learning and delivering high-impact technical solutions.</p>
+        <ul class="facts">
+          <li><span>Location</span>Bayamón, Puerto Rico</li>
+          <li><span>Languages</span>Spanish (native) · English (intermediate)</li>
+          <li><span>Certified</span>Python Pro · Programming &amp; Computer Technology</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- FOCUS -->
+    <section id="focus" class="section">
+      <h2><span class="num">02</span> What I build</h2>
+      <div class="cards">
+        <article class="card">
+          <div class="icon">🧠</div>
+          <h3>Local AI &amp; agents</h3>
+          <p>Private LLM setups with Ollama, LM Studio and llama.cpp; RAG pipelines on ChromaDB/FAISS; multi-agent orchestration with Claude Code and OpenCode.</p>
+          <ul class="tags"><li>Ollama</li><li>RAG</li><li>FastAPI</li><li>Claude API</li></ul>
+        </article>
+        <article class="card">
+          <div class="icon">⚙️</div>
+          <h3>Automation &amp; bots</h3>
+          <p>Bots for nearly everything — scripted workflows in Python, Bash and PowerShell, scheduled with systemd and cron.</p>
+          <ul class="tags"><li>Python</li><li>Bash</li><li>systemd</li><li>RegEx</li></ul>
+        </article>
+        <article class="card">
+          <div class="icon">🐧</div>
+          <h3>Linux &amp; systems</h3>
+          <p>Hardened, optimized Linux setups: Docker, SSH/GPG, UFW/fail2ban, WireGuard/Tailscale networking and custom multi-ISO bootable USBs.</p>
+          <ul class="tags"><li>Docker</li><li>WireGuard</li><li>Ventoy</li><li>Git LFS</li></ul>
+        </article>
+        <article class="card">
+          <div class="icon">🎮</div>
+          <h3>Games &amp; creative</h3>
+          <p>Game tweaks and scripting, Godot, 3D in Blender, CAD in FreeCAD, plus video, music production and folkloric storytelling.</p>
+          <ul class="tags"><li>Godot</li><li>Blender</li><li>FreeCAD</li><li>OBS</li></ul>
+        </article>
+      </div>
+    </section>
+
+    <!-- SKILLS -->
+    <section id="skills" class="section">
+      <h2><span class="num">03</span> Skills</h2>
+      <div class="skill-groups">
+        <div class="skill-group">
+          <h3>Languages &amp; scripting</h3>
+          <ul class="chips"><li>Python</li><li>C/C++</li><li>Bash</li><li>PowerShell</li><li>SQL / SQLite</li><li>HTML / CSS / JS</li><li>React</li><li>YAML / JSON</li><li>Markdown</li><li>RegEx</li></ul>
+        </div>
+        <div class="skill-group">
+          <h3>Systems &amp; platforms</h3>
+          <ul class="chips"><li>Linux</li><li>WSL</li><li>Ubuntu Pro / apt</li><li>Git</li><li>Git LFS</li><li>Docker</li><li>Docker Compose</li><li>systemd / cron</li><li>SSH</li><li>GPG</li><li>UFW / fail2ban</li><li>WireGuard / Tailscale</li><li>Ventoy</li><li>Wireshark</li><li>Microsoft Office</li></ul>
+        </div>
+        <div class="skill-group">
+          <h3>AI &amp; automation</h3>
+          <ul class="chips"><li>LM Studio</li><li>Ollama</li><li>llama.cpp</li><li>Qwen / Claude local</li><li>Claude API / Claude Code</li><li>OpenCode</li><li>FastAPI</li><li>Multi-agent orchestration</li><li>RAG pipelines</li><li>ChromaDB / FAISS</li><li>Prompt engineering</li></ul>
+        </div>
+        <div class="skill-group">
+          <h3>Construction &amp; design</h3>
+          <ul class="chips"><li>Blueprint reading</li><li>Residential construction</li><li>PV system design</li><li>Blender 3D</li><li>FreeCAD</li><li>Scribus</li><li>GIMP</li><li>Inkscape</li></ul>
+        </div>
+        <div class="skill-group">
+          <h3>Other</h3>
+          <ul class="chips"><li>Solar &amp; photovoltaics</li><li>Game tweaks &amp; scripting</li><li>Godot</li><li>Content creation</li><li>OBS / video editing</li><li>Ardour / LMMS</li><li>Folkloric novels</li></ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- EXPERIENCE -->
+    <section id="experience" class="section">
+      <h2><span class="num">04</span> Experience</h2>
+      <ol class="timeline">
+        <li>
+          <div class="when">Oct 2023 — Mar 2025</div>
+          <div class="what">
+            <h3>Solar Installation Technician</h3>
+            <p class="where">Solar Installer · Monacillo, PR</p>
+            <ul>
+              <li>Installed residential solar panels and photovoltaic systems.</li>
+              <li>Read and interpreted electrical and architectural blueprints.</li>
+              <li>Met rigorous safety and quality standards on every project.</li>
+            </ul>
+          </div>
+        </li>
+        <li>
+          <div class="when">Sep 2022 — Oct 2023</div>
+          <div class="what">
+            <h3>Machine Operator</h3>
+            <p class="where">Steel Services &amp; Supplies · Toa Baja, PR</p>
+            <ul>
+              <li>Operated industrial equipment for manufacturing and logistics.</li>
+              <li>Contributed to operational organization and efficiency.</li>
+            </ul>
+          </div>
+        </li>
+      </ol>
+
+      <div class="creds">
+        <div class="cred">
+          <span class="badge">Certificate</span>
+          <h3>Python Pro Certificate</h3>
+          <p>November 2025</p>
+        </div>
+        <div class="cred">
+          <span class="badge">Certificate</span>
+          <h3>Programming &amp; Computer Technology (120h)</h3>
+          <p>June 2025</p>
+        </div>
+        <div class="cred">
+          <span class="badge alt">Education</span>
+          <h3>Francisco Gaztambide Vega High School</h3>
+          <p>High School Diploma · Bayamón, PR · May 2018</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact" class="section contact">
+      <h2><span class="num">05</span> Contact</h2>
+      <p class="lead">Open to full-time roles — on-site, remote, or subcontracted depending on the project. Let's talk.</p>
+      <div class="cta">
+        <a class="btn primary" href="mailto:Adrielantoni00@icloud.com">Adrielantoni00@icloud.com</a>
+        <a class="btn ghost" href="https://github.com/Adrielantoni000" target="_blank" rel="noopener">github.com/Adrielantoni000</a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p>© <span id="year">2026</span> Adriel Antonio Silva Hernández · Built with plain HTML &amp; CSS</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
