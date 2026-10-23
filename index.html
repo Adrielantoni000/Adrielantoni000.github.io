@@ -7,7 +7,7 @@
   <meta name="description" content="Adriel Antonio Silva Hernández — Software developer focused on Linux, local AI, automation, Python and C++. Bayamón, Puerto Rico.">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Unbounded:wght@500;700;800&family=Instrument+Sans:ital,wght@0,400;0,500;0,600;0,700;1,400&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
   <script>
     try { const t = localStorage.getItem('theme'); if (t) document.documentElement.dataset.theme = t; } catch (e) {}
@@ -17,7 +17,7 @@
   <a class="skip" href="#main">Skip to content</a>
 
   <header class="nav">
-    <a class="brand" href="#top"><span class="prompt">~/</span>adriel</a>
+    <a class="brand" href="#top"><span class="brand-sun" aria-hidden="true"></span>adriel</a>
     <nav aria-label="Main">
       <a href="#about">About</a>
       <a href="#focus">Focus</a>
@@ -25,18 +25,17 @@
       <a href="#experience">Experience</a>
       <a href="#contact">Contact</a>
     </nav>
-    <button class="theme-toggle" type="button" aria-label="Toggle color theme">
-      <svg class="i-sun" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/></svg>
-      <svg class="i-moon" viewBox="0 0 24 24" aria-hidden="true"><path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z"/></svg>
-    </button>
+    <button class="theme-toggle" type="button" aria-label="Toggle color theme"><span class="astro" aria-hidden="true"></span></button>
   </header>
+
+  <div class="aurora" aria-hidden="true"><i></i><i></i><i></i><i></i></div>
 
   <main id="main">
     <!-- HERO -->
     <section class="hero" id="top">
       <div class="hero-text">
-        <p class="eyebrow"><span class="dot"></span> Available — full-time, remote, on-site or contract</p>
-        <h1>Adriel Antonio<br><span class="grad">Silva Hernández</span></h1>
+        <p class="sticker"><span class="dot"></span> Available — full-time, remote, on-site or contract</p>
+        <h1>Adriel Antonio<br><span class="mark">Silva Hernández</span></h1>
         <p class="lead">Software developer building <strong>local AI</strong>, <strong>automation</strong> and <strong>Linux</strong> tooling — from bash scripts to multi-agent pipelines.</p>
         <div class="cta">
           <a class="btn primary" href="#contact">Get in touch</a>
@@ -47,28 +46,45 @@
         </div>
       </div>
 
-      <div class="terminal">
-        <div class="term-bar"><span></span><span></span><span></span><em>adriel@fedora: ~</em></div>
-        <pre class="term-body"><code><span class="c-p">$</span> whoami
-adriel — developer · Bayamón, PR
-
+      <!-- The workshop: a scene drawn only with CSS -->
+      <div class="taller" aria-hidden="true">
+        <div class="sol"></div>
+        <div class="nube n1"></div>
+        <div class="nube n2"></div>
+        <div class="casa">
+          <div class="techo"><div class="panel"></div></div>
+          <div class="pared">
+            <div class="ventanita"></div>
+            <div class="vejigante"><i class="cuerno c1"></i><i class="cuerno c2"></i><i class="cuerno c3"></i><i class="cara"></i></div>
+          </div>
+        </div>
+        <div class="mesa"></div>
+        <div class="monitor">
+          <div class="pantalla">
+<pre><code><span class="c-p">$</span> whoami
+adriel · dev · Bayamón, PR
 <span class="c-p">$</span> cat stack.txt
-python  c++  bash  sql  react
-linux   docker  git  systemd
-
+python c++ bash sql react linux docker git
 <span class="c-p">$</span> ollama list <span class="c-m"># local AI</span>
 qwen  llama.cpp  claude-code  rag
-
 <span class="c-p">$</span> <span class="typed" data-text="echo &quot;let's build something&quot;"></span><span class="caret">▍</span></code></pre>
+          </div>
+          <div class="pie"></div>
+        </div>
+        <div class="tux"><i class="ojos"></i><i class="pico"></i><i class="patas"></i></div>
+        <div class="mando"><i class="cruz"></i><i class="botones"></i></div>
+        <div class="taza"><i class="vapor"></i></div>
       </div>
     </section>
 
     <!-- ABOUT -->
-    <section id="about" class="section">
+    <section id="about" class="section s-mar">
       <h2><span class="num">01</span> About</h2>
       <div class="about">
-        <p>Motivated and adaptable developer with multidisciplinary experience in <strong>programming, automation, local AI</strong>, solar installation and industrial operations. I'm passionate about open-source technology, backend development and building efficient tools that solve real problems.</p>
-        <p>My background in the field — reading blueprints, meeting strict safety standards, keeping operations running — shapes how I write software: practical, reliable and well-documented. I'm committed to continuous learning and delivering high-impact technical solutions.</p>
+        <div class="about-text">
+          <p>Motivated and adaptable developer with multidisciplinary experience in <strong>programming, automation, local AI</strong>, solar installation and industrial operations. I'm passionate about open-source technology, backend development and building efficient tools that solve real problems.</p>
+          <p>My background in the field — reading blueprints, meeting strict safety standards, keeping operations running — shapes how I write software: practical, reliable and well-documented. I'm committed to continuous learning and delivering high-impact technical solutions.</p>
+        </div>
         <ul class="facts">
           <li><span>Location</span>Bayamón, Puerto Rico</li>
           <li><span>Languages</span>Spanish (native) · English (intermediate)</li>
@@ -78,29 +94,29 @@ qwen  llama.cpp  claude-code  rag
     </section>
 
     <!-- FOCUS -->
-    <section id="focus" class="section">
+    <section id="focus" class="section s-sol">
       <h2><span class="num">02</span> What I build</h2>
       <div class="cards">
-        <article class="card">
-          <div class="icon">🧠</div>
+        <article class="card c-ai">
+          <div class="icon" aria-hidden="true"><i class="ic-chip"></i></div>
           <h3>Local AI &amp; agents</h3>
           <p>Private LLM setups with Ollama, LM Studio and llama.cpp; RAG pipelines on ChromaDB/FAISS; multi-agent orchestration with Claude Code and OpenCode.</p>
           <ul class="tags"><li>Ollama</li><li>RAG</li><li>FastAPI</li><li>Claude API</li></ul>
         </article>
-        <article class="card">
-          <div class="icon">⚙️</div>
+        <article class="card c-auto">
+          <div class="icon" aria-hidden="true"><i class="ic-gear"></i></div>
           <h3>Automation &amp; bots</h3>
           <p>Bots for nearly everything — scripted workflows in Python, Bash and PowerShell, scheduled with systemd and cron.</p>
           <ul class="tags"><li>Python</li><li>Bash</li><li>systemd</li><li>RegEx</li></ul>
         </article>
-        <article class="card">
-          <div class="icon">🐧</div>
+        <article class="card c-linux">
+          <div class="icon" aria-hidden="true"><i class="ic-tux"></i></div>
           <h3>Linux &amp; systems</h3>
           <p>Hardened, optimized Linux setups: Docker, SSH/GPG, UFW/fail2ban, WireGuard/Tailscale networking and custom multi-ISO bootable USBs.</p>
           <ul class="tags"><li>Docker</li><li>WireGuard</li><li>Ventoy</li><li>Git LFS</li></ul>
         </article>
-        <article class="card">
-          <div class="icon">🎮</div>
+        <article class="card c-games">
+          <div class="icon" aria-hidden="true"><i class="ic-pad"></i></div>
           <h3>Games &amp; creative</h3>
           <p>Game tweaks and scripting, Godot, 3D in Blender, CAD in FreeCAD, plus video, music production and folkloric storytelling.</p>
           <ul class="tags"><li>Godot</li><li>Blender</li><li>FreeCAD</li><li>OBS</li></ul>
@@ -109,7 +125,7 @@ qwen  llama.cpp  claude-code  rag
     </section>
 
     <!-- SKILLS -->
-    <section id="skills" class="section">
+    <section id="skills" class="section s-hoja">
       <h2><span class="num">03</span> Skills</h2>
       <div class="skill-groups">
         <div class="skill-group">
@@ -136,7 +152,7 @@ qwen  llama.cpp  claude-code  rag
     </section>
 
     <!-- EXPERIENCE -->
-    <section id="experience" class="section">
+    <section id="experience" class="section s-flor">
       <h2><span class="num">04</span> Experience</h2>
       <ol class="timeline">
         <li>
@@ -184,18 +200,26 @@ qwen  llama.cpp  claude-code  rag
     </section>
 
     <!-- CONTACT -->
-    <section id="contact" class="section contact">
-      <h2><span class="num">05</span> Contact</h2>
-      <p class="lead">Open to full-time roles — on-site, remote, or subcontracted depending on the project. Let's talk.</p>
-      <div class="cta">
-        <a class="btn primary" href="mailto:Adrielantoni00@icloud.com">Adrielantoni00@icloud.com</a>
-        <a class="btn ghost" href="https://github.com/Adrielantoni000" target="_blank" rel="noopener">github.com/Adrielantoni000</a>
+    <section id="contact" class="section contact s-mar">
+      <div class="postal">
+        <div class="postal-text">
+          <h2><span class="num">05</span> Contact</h2>
+          <p class="lead">Open to full-time roles — on-site, remote, or subcontracted depending on the project. Let's talk.</p>
+          <div class="cta">
+            <a class="btn primary" href="mailto:Adrielantoni00@icloud.com">Adrielantoni00@icloud.com</a>
+            <a class="btn ghost" href="https://github.com/Adrielantoni000" target="_blank" rel="noopener">github.com/Adrielantoni000</a>
+          </div>
+        </div>
+        <div class="postal-side" aria-hidden="true">
+          <div class="sello"><i class="sello-sol"></i><span>PR</span></div>
+          <div class="matasellos">Bayamón · Puerto Rico</div>
+        </div>
       </div>
     </section>
   </main>
 
   <footer class="footer">
-    <p>© <span id="year">2026</span> Adriel Antonio Silva Hernández · Built with plain HTML &amp; CSS</p>
+    <p>© <span id="year">2026</span> Adriel Antonio Silva Hernández · Drawn with plain HTML &amp; CSS</p>
   </footer>
 
   <script src="script.js"></script>
