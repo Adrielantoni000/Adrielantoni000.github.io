@@ -7,7 +7,7 @@
   <meta name="description" content="Adriel Antonio Silva Hernández — Software developer focused on Linux, local AI, automation, Python and C++. Bayamón, Puerto Rico.">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Unbounded:wght@500;700;800&family=Instrument+Sans:ital,wght@0,400;0,500;0,600;0,700;1,400&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Noto+Sans+Mono:wght@400;600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
   <script>
     try { const t = localStorage.getItem('theme'); if (t) document.documentElement.dataset.theme = t; } catch (e) {}
@@ -28,8 +28,6 @@
     <button class="theme-toggle" type="button" aria-label="Toggle color theme"><span class="astro" aria-hidden="true"></span></button>
   </header>
 
-  <div class="aurora" aria-hidden="true"><i></i><i></i><i></i><i></i></div>
-
   <main id="main">
     <!-- HERO -->
     <section class="hero" id="top">
@@ -46,35 +44,26 @@
         </div>
       </div>
 
-      <!-- The workshop: a scene drawn only with CSS -->
-      <div class="taller" aria-hidden="true">
-        <div class="sol"></div>
-        <div class="nube n1"></div>
-        <div class="nube n2"></div>
-        <div class="casa">
-          <div class="techo"><div class="panel"></div></div>
-          <div class="pared">
-            <div class="ventanita"></div>
-            <div class="vejigante"><i class="cuerno c1"></i><i class="cuerno c2"></i><i class="cuerno c3"></i><i class="cara"></i></div>
-          </div>
+      <!-- A Konsole window in the Breeze style, drawn with CSS -->
+      <figure class="ventana" aria-label="Terminal">
+        <div class="titlebar">
+          <span class="app" aria-hidden="true"></span>
+          <span class="titulo">~ : bash — Konsole</span>
+          <span class="wbtns" aria-hidden="true"><i class="w-min"></i><i class="w-max"></i><i class="w-close"></i></span>
         </div>
-        <div class="mesa"></div>
-        <div class="monitor">
-          <div class="pantalla">
-<pre><code><span class="c-p">$</span> whoami
-adriel · dev · Bayamón, PR
+        <div class="tabbar"><span class="tab">adriel@fedora: ~</span></div>
+        <pre class="term-body"><code><span class="c-p">$</span> whoami
+adriel — developer · Bayamón, PR
+
 <span class="c-p">$</span> cat stack.txt
-python c++ bash sql react linux docker git
+python  c++  bash  sql  react
+linux   docker  git  systemd
+
 <span class="c-p">$</span> ollama list <span class="c-m"># local AI</span>
 qwen  llama.cpp  claude-code  rag
+
 <span class="c-p">$</span> <span class="typed" data-text="echo &quot;let's build something&quot;"></span><span class="caret">▍</span></code></pre>
-          </div>
-          <div class="pie"></div>
-        </div>
-        <div class="tux"><i class="ojos"></i><i class="pico"></i><i class="patas"></i></div>
-        <div class="mando"><i class="cruz"></i><i class="botones"></i></div>
-        <div class="taza"><i class="vapor"></i></div>
-      </div>
+      </figure>
     </section>
 
     <!-- ABOUT -->
@@ -210,16 +199,12 @@ qwen  llama.cpp  claude-code  rag
             <a class="btn ghost" href="https://github.com/Adrielantoni000" target="_blank" rel="noopener">github.com/Adrielantoni000</a>
           </div>
         </div>
-        <div class="postal-side" aria-hidden="true">
-          <div class="sello"><i class="sello-sol"></i><span>PR</span></div>
-          <div class="matasellos">Bayamón · Puerto Rico</div>
-        </div>
       </div>
     </section>
   </main>
 
   <footer class="footer">
-    <p>© <span id="year">2026</span> Adriel Antonio Silva Hernández · Drawn with plain HTML &amp; CSS</p>
+    <p>© <span id="year">2026</span> Adriel Antonio Silva Hernández · Built with plain HTML &amp; CSS</p>
   </footer>
 
   <script src="script.js"></script>

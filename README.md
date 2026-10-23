@@ -11,8 +11,8 @@ Personal developer portfolio — plain HTML, CSS and JavaScript, no frameworks.
 | File | Purpose |
 |---|---|
 | `index.html` | Page content and sections |
-| `styles.css` | Liquid-glass design: tokens (`:root`), aurora background, glass panels, the CSS-drawn workshop scene, light/dark themes |
-| `script.js` | Theme toggle, typing effect on the workshop monitor, scroll reveal |
+| `styles.css` | KDE Breeze design: tokens (`:root`) with the Breeze / Breeze Dark palette, the CSS-drawn Konsole window and icons, light/dark themes |
+| `script.js` | Theme toggle, typing effect in the Konsole window, scroll reveal |
 | `.github/workflows/maintenance.yml` | Automated checks on every push + weekly link check |
 | `.github/scripts/privacy-scan.sh` | Blocks private data and secrets from being committed |
 
